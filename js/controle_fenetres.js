@@ -4,6 +4,7 @@ function ouvrirPage( identifiant1, identifiant2)
     if(identifiant2 =='')
     {
         let blocConnexion = document.querySelector('#'+identifiant1);
+        blocConnexion.style.display = 'flex';
         blocConnexion.style.visibility = 'visible';
         blocConnexion.style.top = '0px';
         console.log(blocConnexion.style.display);
@@ -12,15 +13,17 @@ function ouvrirPage( identifiant1, identifiant2)
     {
         fermerPage(identifiant2)
         let blocConnexion = document.querySelector('#'+identifiant1);
+        blocConnexion.style.display = 'flex';
         blocConnexion.style.visibility = 'visible';
         blocConnexion.style.top = '0px';
         console.log(blocConnexion.style.display);
     }
 }
-function fermerPage( identifiant1)
+function fermerPage(identifiant1)
 {
     let blocConnexion = document.querySelector('#'+identifiant1);
     blocConnexion.style.visibility = 'hidden';
+    blocConnexion.style.display = 'none';
     blocConnexion.style.top = '-600px';
     
 }
@@ -53,4 +56,10 @@ function retour()
 function ouvrirLien(elt)
 {
     open(elt,'popup');
+}
+
+// FONCTION POUR OUVRIR UN AUTRE ELEMENT EN CLIQUANT SUR UN
+function cliquerSur(elt)
+{
+    document.querySelector(elt).click()
 }
