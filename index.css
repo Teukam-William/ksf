@@ -1,0 +1,325 @@
+*:not(title)
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'century Gothic';
+    scrollbar-color: #006d0f #00540B;
+    scrollbar-width: thin;
+}
+
+.boiteFormulaire
+{
+    width: 80%;
+}
+p,input, button
+{
+    font-size: 18px;
+}
+input, select
+{
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px;
+
+}
+
+button
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px; 
+    cursor: pointer; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+button>img
+{
+    height: 30px;
+    width: min-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.bouton_close
+{
+    height: 30px;
+    /* position: absolute; */
+    left: 0px;
+    top: 40px;
+}
+.btn_jaune
+{
+    background-color: #F6CD00;
+}
+.bouton_rouge
+{
+    background-color: #F61100;
+    color: white;
+}
+.btnTransparentBnlanc
+{
+    background-color: rgba(255, 255, 255, 0.082);
+    border: 1px solid white;
+    color: white;
+    /* margin-left: 5px; */
+}
+#pageConnexion, #pageInscriptionRestaurant, #pageInscriptionUtilisateur, #pageInscription, #boiteCreerRepas, #boiteListeRepas, #detailDuRepas, #boiteListeRepasConsommateur
+{
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 110vh;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #00540B;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+    color: white;
+}
+/* #################### ENTETE ######################*/
+.entete
+{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #00540B;
+    background: linear-gradient(0deg, #00540B, #008712);
+    box-shadow: 0px 0px 15px black;
+}
+.logo
+{
+    width: 65px;
+}
+.boutonMenu
+{
+    width: 50px;
+    cursor: pointer;
+}
+#menuLateral
+{
+    position: fixed;
+    right: 0px;
+    z-index: 1001;
+    top: -6000px;
+    padding-top: 5px;
+    justify-content: flex-start;
+    width: 80vw;
+    height: 100vh;
+    background-color: #f6cd00ab;
+    color: black;
+}
+.boite_close
+{
+    /* background-color: green; */
+    align-items: flex-end;
+    justify-content: center;
+    height: 90px;
+    width: 100%;
+}
+
+
+
+/* ############# PAGE INSCRIPTION ############ */
+#pageConnexion, #pageInscriptionRestaurant, #pageInscriptionUtilisateur, #boiteListeRepas, #detailDuRepas
+{
+    top:-600px;
+    visibility: hidden;
+}
+#pageConnexion_BoutonSeConnecter
+{
+    background-color: #F6CD00;
+}
+#pageConnexion_BoutonSinscrire, #pageInscriptionRestaurant_BoutonSeConnecter, #pageInscriptionUtilisateur_BoutonSeConnecter
+{
+    color: #F6CD00;
+    cursor: pointer;
+}
+/* ######## PAGE INSCRIPTION ######## */
+.boiteFormulaire>div
+{
+    flex-direction: row;
+    align-items: space-around;
+}
+
+/* ######## PIED DE PAGE ######## */
+.piedDePage
+{
+    
+    position: fixed;
+    z-index: 1000;
+    bottom: 30PX;
+    width: 100%;
+    height: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    /* background-color: #00540B;
+    box-shadow: 0px 0px 15px black; */
+}
+.contacterUnCuisinier
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6CD00;
+}
+.piedDePage>button
+{
+    left: 0px;
+}
+
+/* PARTIE RESTAURANT */
+.boiteCreerRepas
+{
+    overflow: scroll;
+    height: auto;
+}
+.boiteOption
+{
+   flex-direction: row;
+   color: white;
+   box-shadow: 0px 0px 10px black;
+   border-bottom: 1px solid black;
+   height: min-content;
+}
+.boiteAfficheRepas
+{
+    flex-direction: column;
+    width: 98vw;
+    height: 110vh;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.219);
+}
+.boiteRepas
+{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.imageEtNomDuRepas
+{
+    width: 100%;
+    /* height: 330px; */
+    background-color: #0000007e;
+}
+.imageRepas
+{
+    width: auto;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.nomDuRepas
+{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.heureEtAge
+{
+    flex-direction: row;
+}
+.heureDuRepas, .AgeConsommateurDuRepas
+{
+    margin: 5px;
+}
+.AgeConsommateurDuRepas
+{}
+.nomRestaurant
+{
+    font-weight: bold;
+    font-style: italic;
+    align-items: flex-start;
+    padding: 10px;
+}
+.compositionDuRepas
+{
+    background-color: #008712;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.groupeDaliment
+{
+    margin-bottom: 15px;
+}
+.nomDuGroupe
+{
+    background-color: white;
+    flex-direction: row;
+    color: black;
+    box-shadow: 0px 0px 10px black;
+    margin-bottom: 7px;
+    font-size: 25px !important;
+    font-weight: bold;
+}
+.NutrimentEtAutres
+{
+    background-color: #F6CD00;
+    flex-direction: row;
+    color: #000000;
+}
+/* CREER REPAS */
+.valeurNutriments
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: min-content;
+}
+.enteteAlimentGroupe
+{
+    flex-direction: row;
+}
+.enteteAlimentGroupe>div
+{
+    width: 90%;
+}.enteteAlimentGroupe>img
+{
+    width: 10%;
+    background-color: #F61100;
+    height: max-content;
+}
+.valeurNutriments>div
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 10px black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6CD00;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+.valeurNutriments>div>p
+{
+    font-size: 14px;
+    margin: 0px;
+    width: min-content;
+}
