@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KSF</title>
-    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="index2.css">
 </head>
 <body>
     <?php
@@ -14,7 +15,7 @@
     <div id="pageConnexion">
         <img src="./images/LOGO K-MER SOFT FOOD.svg" height="150px" width="10px" alt="KSF">
         <br>
-        <h1>Se conecter</h1>
+        <h1  class="titreVert">Se connecter</h1>
         <br>
         <br>
         <div class="boiteFormulaire">
@@ -35,7 +36,7 @@
     <div id="pageInscriptionRestaurant">
         <div>
         <img src="./images/restaurant.svg" height="150px" width="10px" alt="KSF">
-        <h1>S'inscrire</h1>
+        <h1 class="titreVert">S'inscrire</h1>
         </div>
         <br>
         <br>
@@ -49,7 +50,7 @@
             <input required type="password" placeholder="Créer un mot de passe" name="pageInscriptionRestaurant_MotDePasse" id="pageInscriptionRestaurant_MotDePasse">
             <br/>   
             <br/>
-            <button onclick="inscriptionRestaurant()" id="pageInscriptionRestaurant_BoutonSinscrire" class="btn_jaune">S'inscrire</button>
+            <button onclick="inscriptionRestaurant()" id="pageInscriptionRestaurant_BoutonSinscrire" >S'inscrire</button>
             <br>
             <p onclick="ouvrirPage('pageConnexion','pageInscriptionRestaurant'), setRetour('pageInscriptionRestaurant')" id="pageInscriptionRestaurant_BoutonSeConnecter">Se connecter</p>
         </div>
@@ -61,7 +62,7 @@
     <div id="pageInscriptionUtilisateur">
         <div>
         <img src="./images/utilisateur.svg" height="150px" width="10px" alt="KSF">
-        <h1>S'inscrire</h1>
+        <h1 class="titreVert">S'inscrire</h1>
         </div>
         <br>
         <br>
@@ -75,7 +76,7 @@
             <input required type="password" placeholder="Créer un mot de passe" name="pageInscriptionUtilisateur_MotDePasse" id="pageInscriptionUtilisateur_MotDePasse">
             <br/>   
             <br/>
-            <button onclick="inscriptionUtilisateur()" id="pageInscriptionUtilisateur_BoutonSinscrire" class="btn_jaune">S'inscrire</button>
+            <button onclick="inscriptionUtilisateur()" id="pageInscriptionUtilisateur_BoutonSinscrire" >S'inscrire</button>
             <br>
             <p onclick="ouvrirPage('pageConnexion','pageInscriptionUtilisateur'), setRetour('pageInscriptionUtilisateur')" id="pageInscriptionUtilisateur_BoutonSeConnecter">Se connecter</p>
         </div>
@@ -86,9 +87,9 @@
     
     <div id="pageInscription">
         <div>
-        <img src="./images/LOGO K-MER SOFT FOOD.svg" height="150px" width="10px" alt="KSF">
+        <img src="./images/LOGO K-MER SOFT FOOD vert.svg" height="150px" width="10px" alt="KSF">
        <br> 
-        <h1>S'inscrire</h1>
+        <h1  class="titreVert">S'inscrire</h1>
         </div>
         <br>
         <br>
@@ -99,7 +100,7 @@
             </div>
         </div>
         <br>
-        <button onclick="ouvrirPage('pageConnexion','pageInscription'), setRetour('pageInscription')" id="pageInscription_BoutonSeConnecter">Se connecter</button>
+        <button  onclick="ouvrirPage('pageConnexion','pageInscription'), setRetour('pageInscription')" id="pageInscription_BoutonSeConnecter">Se connecter</button>
     </div>
 </body>
 <script src="./js/controle_fenetres.js"></script>

@@ -1,0 +1,457 @@
+*:not(title)
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'century Gothic';
+    scrollbar-color: #c1c998 #D8E1A9;
+    scrollbar-width: thin;
+}
+div:not(.entete, .boiteOption, .boiteImageR, .NutrimentEtAutres, .nomDuGroupe)
+{
+    border-radius: 21px;
+}
+.boiteFormulaire
+{
+    width: 80%;
+}
+p, button,select
+{
+    font-size: 18px;
+    border-radius: 21px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+input
+{
+    background-color: white;
+    font-size: 18px;
+    border-radius: 21px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    height: 50px;
+    padding-bottom: 10px;
+    border: 0px;
+
+}
+
+button
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px; 
+    cursor: pointer; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+}
+button>img
+{
+    height: 10px;
+    width: min-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.bouton_close
+{
+    height: 30px;
+    /* position: absolute; */
+    left: 0px;
+    top: 40px;
+}
+.btn_jaune
+{
+    background-color: #F6CD00;
+}
+.bouton_rouge
+{
+    background-color: #F61100;
+    color: white;
+}
+.btn_orange
+{
+    background-color: #F4940D;
+    color: white;
+}
+.btnTransparentBnlanc
+{
+    background-color: rgba(255, 255, 255, 0.082);
+    border: 1px solid white;
+    color: white;
+    /* margin-left: 5px; */
+}
+#pageConnexion, #pageInscriptionRestaurant, #pageInscriptionUtilisateur, #pageInscription, #boiteCreerRepas, #boiteListeRepas, #detailDuRepas, #boiteListeRepasConsommateur, #boiteModifierRepas
+{
+    position: absolute;
+    flex-direction: column;
+    height: 110vh;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background-color: #D8E1A9;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+    color: rgb(0, 0, 0);
+    max-width: 600px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+}
+/* #################### ENTETE ######################*/
+.entete
+{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #00540B;
+    background: linear-gradient(0deg, #357B0D,#63980E);
+    /* box-shadow: 0px 0px 15px black; */
+    max-width: 600px;
+}
+.logo
+{
+    width: 65px;
+}
+.boutonMenu
+{
+    width: 50px;
+    cursor: pointer;
+}
+#menuLateral
+{
+    position: fixed;
+    right: 0px;
+    z-index: 1001;
+    top: -6000px;
+    padding-top: 5px;
+    justify-content: flex-start;
+    width: 80vw;
+    height: 100vh;
+    background-color: #f6cd00ab;
+    color: black;
+    max-width: 600px;
+}
+.boite_close
+{
+    /* background-color: green; */
+    align-items: flex-end;
+    justify-content: center;
+    height: 90px;
+    width: 100%;
+}
+
+
+
+/* ############# PAGE INSCRIPTION ############ */
+#pageConnexion, #pageInscriptionRestaurant, #pageInscriptionUtilisateur, #boiteListeRepas, #detailDuRepas, #boiteModifierRepas
+{
+    top:-600px;
+    display: none;
+    visibility: hidden;
+}
+#pageConnexion_BoutonSeConnecter, #pageInscription_BoutonSeConnecter, #pageInscriptionUtilisateur_BoutonSinscrire, #pageInscriptionRestaurant_BoutonSinscrire
+{
+    background-color: #F4940D;
+    color: white;
+}
+#pageInscription_BoutonSeConnecter
+{
+    width: 220px;
+}
+#pageConnexion_BoutonSinscrire, #pageInscriptionRestaurant_BoutonSeConnecter, #pageInscriptionUtilisateur_BoutonSeConnecter
+{
+    color: #00540B;
+    cursor: pointer;
+}
+.titreVert
+{
+    color: #00540B;
+}
+/* ######## PAGE INSCRIPTION ######## */
+.boiteFormulaire>div
+{
+    flex-direction: row;
+    align-items: space-around;
+}
+
+/* ######## PIED DE PAGE ######## */
+.piedDePage
+{
+    
+    position: fixed;
+    z-index: 1000;
+    bottom: 100PX;
+    width: 100%;
+    height: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    max-width: 600px;
+    /* background-color: #00540B;
+    box-shadow: 0px 0px 15px black; */
+}
+.contacterUnCuisinier
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6CD00;
+}
+.piedDePage>button
+{
+    left: 0px;
+}
+
+/* PARTIE RESTAURANT */
+#boiteCreerRepas, #boiteListeRepas, #detailDuRepas
+{
+    overflow: scroll;
+    height: auto;
+    width: 100%;
+}
+.boiteOption
+{
+   flex-direction: row;
+   color: white;
+   width: 100%;
+   height: 55px;
+   border-bottom: 2px solid  #63980E;
+   margin-bottom: 10px;
+}
+.boiteAfficheRepas, .boiteAfficheListeRepas, .boiteAfficheDetailsRepas
+{
+    flex-direction: column;
+    width: 95%;
+    max-width: 600px;
+    height: 110vh;
+    overflow-y: scroll;
+    /* background-color: rgba(0, 0, 0, 0.219); */
+}
+.boiteRepas
+{
+    justify-content: flex-start;
+    align-items: center;
+}
+.imageEtNomDuRepas
+{
+    width: 100%;
+    /* max-height: 350px; */
+    overflow: hidden;
+}
+.boiteImageR
+{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 21px;
+    border-top-left-radius: 21px;
+    background-color: #63980E;
+}
+.imageRepas, .imageRepasModifier
+{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+.nomDuRepas
+{
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4940D;
+    color: white;
+    padding: 2%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.heureEtAge
+{
+    flex-direction: row;
+}
+.heureDuRepas, .AgeConsommateurDuRepas
+{
+    margin: 5px;
+}
+.AgeConsommateurDuRepas
+{}
+.nomRestaurant
+{
+    font-weight: bold;
+    font-style: italic;
+    align-items: flex-start;
+    padding: 10px;
+}
+.compositionDuRepas
+{
+    background-color: #008712;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.groupeDaliment
+{
+    margin-bottom: 15px;
+}
+.nomDuGroupe
+{
+    background-color: white;
+    flex-direction: row;
+    color: black;
+    margin-bottom: 7px;
+    font-size: 25px !important;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.NutrimentEtAutres
+{
+    background-color: #F4940D;
+    flex-direction: row;
+    color: #000000;
+    margin-bottom: 7px;
+}
+/* CREER REPAS */
+.valeurNutriments
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: min-content;
+}
+.enteteAlimentGroupe
+{
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+.enteteAlimentGroupe>div
+{
+    width: 90%;
+}.enteteAlimentGroupe>img
+{
+    width: 10%;
+    background-color: #F61100;
+    height: max-content;
+    border-radius: 100px;
+}
+.valeurNutriments>div
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 10px black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6CD00;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+.valeurNutriments>div>p
+{
+    font-size: 14px;
+    margin: 0px;
+    width: min-content;
+}
+
+
+/* NOUVEAUX CODE CSS 04 JANVIER 2025 */
+.btn_orange
+{
+    border-radius: 0px;
+    background-color: #F4940D;
+    color: white;
+    margin: 0px;
+    width: 50%;
+    height: 100%;
+}
+.btn_berge
+{
+    border-radius: 0px;
+    background-color: #D8E1A9;
+    color: #357B0D;
+    margin: 0px;
+    width: 50%;
+    height: 100%;
+}
+#imageNouveauRepas, #nouvelleImageNouveauRepas
+{
+    background-color: #63980E;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: #000000;
+    display: none;
+}
+.heureEtAgeEtNomRestaurant
+{
+    background-color: #63980E;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.NutrimentEtAutres>input
+{
+    border-radius: 0px;
+}
+#nomDuRepasNouveau
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn_enregistrerRepas
+{
+    background-color: #F4940D;
+    color: white;
+    font-weight: bold;
+}
+.commandeDetail
+{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.commandeDetail>button
+{
+    margin: 5px;
+}
+.boiteQuantite
+{
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+.boiteQuantite>*
+{
+    width: 50%;
+}
+.boiteQuantite>p
+{
+    justify-content: flex-end;
+    align-items: center;
+    /* border-bottom: 2px solid yellow; */
+}
