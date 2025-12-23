@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="33" viewBox="0 0 50 33">
   <g id="Groupe_1" data-name="Groupe 1" transform="translate(-356 -16)">
-    <rect id="Rectangle_3" data-name="Rectangle 3" width="50" height="7" transform="translate(356 16)" fill="#f6cd00"/>
-    <rect id="Rectangle_3-2" data-name="Rectangle 3" width="50" height="7" transform="translate(356 29)" fill="#f6cd00"/>
-    <rect id="Rectangle_3-3" data-name="Rectangle 3" width="50" height="7" transform="translate(356 42)" fill="#f6cd00"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="50" height="7" transform="translate(356 16)" fill="#D8E1A9"/>
+    <rect id="Rectangle_3-2" data-name="Rectangle 3" width="50" height="7" transform="translate(356 29)" fill="#D8E1A9"/>
+    <rect id="Rectangle_3-3" data-name="Rectangle 3" width="50" height="7" transform="translate(356 42)" fill="#D8E1A9"/>
   </g>
 </svg>
